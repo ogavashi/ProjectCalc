@@ -88,7 +88,7 @@ operatorButtons.forEach((button) => {
 });
 
 equal.addEventListener('click', () => {
-    if(number1.value == '') return;
+    if(number1.value == '' || op == '') return;
     num2 = parseFloat(number1.value);
     display(getAnswer());
     op = '';
